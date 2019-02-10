@@ -1,0 +1,128 @@
+//Шапка 
+header
+	// height: 150px
+
+.header-top
+	padding: 10px
+
+.head-logo
+	padding-left: 10px
+	img
+		vertical-align: middle
+		max-width: 212px
+		max-height: 70px
+
+.header-nav
+	background-color: #f7f9fa
+	border-bottom: 1px solid #d0d7dd
+
+.phone-number 
+	color: #000
+	&:hover
+		color: #565656
+		text-decoration: none
+.header-nav
+	.nav-link
+		color: #333333
+		font-weight: bold
+	.nav-item
+		border-left: 1px solid #fff
+		border-right: 1px solid #fff
+
+// Навигация по товарам
+.nav-products
+	max-width: 170px
+	margin: 10px 0 0 10px
+
+// Слайдер
+.slider
+	margin: auto
+	width: 90%
+
+.slider-img
+	display: none
+	img
+		max-height: 198px
+
+.arrow-left, .arrow-right
+	width: 30px
+	height: 30px
+	background-size: cover
+	position: absolute
+	opacity: .4
+	top: 50%
+	&:hover
+		opacity: 1
+
+.arrow-right
+	right: 50%
+
+.arrow-left
+	left: 50%
+
+.next, .prev
+	width: 5%
+	position: absolute
+	top: 0%
+	cursor: pointer
+	background-color: rgba(0,0,0,.1)
+	height: 100%
+	&:hover
+		background-color: rgba(10,0,0,.3)
+		transition: .6s
+
+.next
+	right: 0
+
+.prev
+	left: 0
+
+// Товары
+.products
+	.col-3
+		padding: 0px
+		&:nth-child(4n+1)
+			.product-item
+				margin-left: 0
+
+.slider, .product-item
+	height: 200px
+	text-align: center
+	border: 1px solid #d0d8de
+
+
+.products
+	.product-item
+		margin: 10px 0 0 10px
+		padding: 5px
+		&:hover
+			transform: scale(1.01)
+			box-shadow: 0 0px 20px 0px
+			transition: .6s
+
+.product-img
+	min-height: 160px
+	img
+		max-height: 150px
+
+// Подробности товара
+.product-details
+	padding: 20px
+	background-color: white
+	border: 1px solid black
+	img
+		max-width: 100%
+
+// Вспомогательные классы
+.container
+	max-width: 1140px
+	background-color: #fff
+
+.show
+	display: block
+
+// Подвал
+footer
+	margin-top: 50px
+	padding: 15px
+	height: 150px
